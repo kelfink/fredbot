@@ -1,5 +1,6 @@
 [
   "ackbar.coffee",
   "demolition-man.coffee",
-  "eval.coffee"
+  "eval.coffee",
+  "xkcd.coffee"
 ]
