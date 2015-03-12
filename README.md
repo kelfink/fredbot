@@ -155,3 +155,11 @@ Add the subdomain hubot should connect to. If you web URL looks like
 
 You may want to get comfortable with `heroku logs` and `heroku restart`
 if you're having issues.
+
+
+## Custom StreamSend Vars
+
+Set the following values when deploying:
+
+  - HUBOT_SLACK_TOKEN = <slack_token>
+  - HEROKU_URL = <url to hubot> # to keep him awake
