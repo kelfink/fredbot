@@ -1,6 +1,17 @@
 [
   "ackbar.coffee",
+  "advice.coffee",
+  "ambush.coffee",
+  "applause.coffee",
+  "ascii.coffee",
   "demolition-man.coffee",
-  "eval.coffee",
+  "devexcuse.coffee",
+  "disassemble.coffee",
+  "quote.coffee",
+  "robot-memes.coffee",
+  "romanemperor.coffee",
+  "ruby.coffee",
+  "sensitive.coffee",
+  "shipit.coffee",
   "xkcd.coffee"
 ]
