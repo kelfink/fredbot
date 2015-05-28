@@ -50,7 +50,7 @@ answers = [
   ":carl: The people have spoken, viva la resistance.",
   ":carl: He was a traitor and a scoundrel.",
   ":carl: That was a foot I seem to have swallowed an entire person.",
-  ":carl: Well that makes sense why my mojito is taking so long.",
+  ":carl: Well that explains why my mojito is taking so long.",
   ":carl: Wow, that sounds pretty awsome.",
   ":carl: That hurt my feelings, now we're both in the wrong.",
   ":carl: In that case I should probably mention that all our luggage is filled with orphan meat.",
