@@ -78,6 +78,9 @@ module.exports = (robot) ->
        msg.send msg.random answers, 3000
        count = 0
 
+ robot.respond /(what.*) (carl) (setting|level).*/i, (msg) ->
+   msg.send "Carl is set to " + (100 - answer_delay) + " and he'll answer in about " + (answer_delay - count) + " questions"
+
  robot.respond /(dial|tone) (it|carl) (up|down|back) to (\d+)%?/i, (msg) ->
    setTimeout () ->
      percent = msg.match[4]
