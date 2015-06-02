@@ -67,19 +67,17 @@ answers = [
   ":carl: Well if you excuse me, I have some pictures to delete from my computer.",
 ]
 
-answer_delay = 25
-count = 0
+answer_rate = 75
 
 module.exports = (robot) ->
  robot.hear /\?/i, (msg) ->
    setTimeout () ->
-     count++
-     if count >= answer_delay && answer_delay != 100
-       msg.send msg.random answers, 3000
-       count = 0
+     roll = Math.floor(Math.random() * 100)
+     if roll <= answer_rate
+       msg.send msg.random answers
 
  robot.respond /(what.*) (carl) (setting|level).*/i, (msg) ->
-   msg.send "Carl is set to " + (100 - answer_delay) + " and he'll answer in about " + (answer_delay - count) + " questions"
+   msg.send "Carl is set to " + answer_rate + "%"
 
  robot.respond /(dial|tone) (it|carl) (up|down|back) to (\d+)%?/i, (msg) ->
    setTimeout () ->
@@ -87,7 +85,8 @@ module.exports = (robot) ->
      if percent > 100
        percent = 100
      if percent <= 0
+       percent = 0
        msg.send ":carl: Oh that's no fun."
 
-     answer_delay = 100 - percent
+     answer_rate = percent
      msg.send "Okay dialing "+msg.match[2]+" "+msg.match[3]+" to "+percent+"%"
