@@ -51,7 +51,7 @@ answers = [
   ":carl: He was a traitor and a scoundrel.",
   ":carl: That was a foot I seem to have swallowed an entire person.",
   ":carl: Well that explains why my mojito is taking so long.",
-  ":carl: Wow, that sounds pretty awsome.",
+  ":carl: Wow, that sounds pretty awesome.",
   ":carl: That hurt my feelings, now we're both in the wrong.",
   ":carl: In that case I should probably mention that all our luggage is filled with orphan meat.",
   ":carl: I'm building a meat dragon and any meat won't do.",
@@ -67,7 +67,7 @@ answers = [
   ":carl: Well if you excuse me, I have some pictures to delete from my computer.",
 ]
 
-answer_rate = 75
+answer_rate = 50
 
 module.exports = (robot) ->
  robot.hear /\?/i, (msg) ->
